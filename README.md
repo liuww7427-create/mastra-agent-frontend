@@ -1,1 +1,0 @@
-# mastra-agent-frontend
