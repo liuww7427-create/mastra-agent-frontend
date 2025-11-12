@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "npx wrangler deploy --assets=./dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@apollo/client": "^4.0.9",
