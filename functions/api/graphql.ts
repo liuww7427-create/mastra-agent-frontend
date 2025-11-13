@@ -1,3 +1,5 @@
+import type { PagesFunction } from '@cloudflare/workers-types';
+
 export const onRequest: PagesFunction<{ BACKEND_API_BASE: string }> = async ({ request, env }) => {
   const backendBase = env.BACKEND_API_BASE;
   if (!backendBase) {
