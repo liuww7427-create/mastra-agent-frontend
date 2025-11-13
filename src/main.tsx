@@ -6,8 +6,9 @@ import { ApolloProvider } from '@apollo/client/react';
 import './index.css';
 import App from './App.tsx';
 
+console.log(import.meta.env)
 const graphqlEndpoint =
-  import.meta.env.VITE_GRAPHQL_ENDPOINT ?? (import.meta.env.DEV ? 'http://localhost:4000/graphql' : '/api/graphql');
+  import.meta.env.VITE_GRAPHQL_ENDPOINT ?? (import.meta.env.DEV ? 'http://localhost:4000/graphql111' : '/api/graphql');
 
 const client = new ApolloClient({
   link: new HttpLink({
