@@ -2,6 +2,8 @@ import type { PagesFunction } from '@cloudflare/workers-types';
 
 export const onRequest: PagesFunction<{ BACKEND_API_BASE: string }> = async ({ request, env }) => {
   const backendBase = env.BACKEND_API_BASE;
+  console.log(env);
+  
   if (!backendBase) {
     return new Response('Missing BACKEND_API_BASE env', { status: 500 });
   }
