@@ -8,6 +8,9 @@ export const onRequest: PagesFunction<{ BACKEND_API_BASE: string }> = async ({ r
 
   const incomingUrl = new URL(request.url);
   const targetUrl = new URL(backendBase);
+
+  console.log(env, backendBase, incomingUrl, targetUrl);
+  
   targetUrl.pathname = '/graphql';
   targetUrl.search = incomingUrl.search;
 
